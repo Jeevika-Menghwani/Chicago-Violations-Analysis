@@ -14,26 +14,40 @@ Geospatial Analysis: Map violations in the 15th Ward using leaflet.
 
 Dataset: 784,225 observations, 22 variables.
 Key Variables: Violation Description, Violation Code, Imposed Fines, Case Disposition, Violation & Hearing Dates.
+
 Data Cleaning:
 Identified 544 missing values, ensuring 97.23% completeness.
+
 Converted date variables (POSIXct) & calculated CityDelay (days between violation & hearing).
+
 Added seasonal categories (Winter, Spring, Summer, Fall).
+
 Exploratory Insights:
 452 unique violations and 456 unique violation codes identified.
+
 Most common case disposition: "Liable."
+
 Highest fines: "Default" cases.
+
 Peak violation season: Summer (construction activity increases).
+
 Weak positive correlation (0.2242) between fines and administrative costs.
+
 📍 Geospatial & Historical Context
 
 Mapped violations in the 15th Ward using leaflet.
+
 15th Ward covers Brighton Park, Gage Park, and West Englewood.
+
 Historical Fact: Chicago’s first major manufacturing industry was established here in 1857.
 🛠️ Tools & Techniques
 
 Programming: R
+
 Libraries Used: tidyverse, ggplot2, lubridate, leaflet, naniar
+
 Techniques: Data cleaning, correlation analysis, seasonal trend analysis, geospatial mapping
+
 🔑 Key Insights
 
 ✅ Liable cases are most common, but Default cases incur the highest fines.
